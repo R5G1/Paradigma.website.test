@@ -1,0 +1,26 @@
+.style-help {
+
+    .conteiner {}
+
+    &__conteiner {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__conteiner-title {
+        padding: 40px 0;
+        color: var(--main-color-b);
+    }
+
+    &__conteiner-text {
+        padding: 10px 0;
+
+    }
+
+    &__conteiner-bg {
+
+        width: 100vw;
+        height: 100vh;
+        background: url('/img/style-help/form-reservation-bigcolor.jpg') center/cover no-repeat;
+    }
+}
