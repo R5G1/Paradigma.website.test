@@ -1,0 +1,30 @@
+%text-decoration {
+
+    position: relative;
+    cursor: pointer;
+    // line-height: 1.5vh;
+    text-decoration: none;
+
+}
+
+%text-decoration::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 0.2vh;
+
+    background-color: var(--main-color-m);
+
+
+    transition: width 0.3s ease-out;
+
+}
+
+%text-decoration:hover:after,
+:focus:after {
+    width: 0%;
+    text-decoration: none;
+}
