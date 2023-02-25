@@ -1,20 +1,18 @@
-// window.addEventListener('scroll', e => {
-//     const scroll = document.querySelector(".header-navigation")
-
-//     if (pageYOffset > 500) {
-//         scroll.classList.add('activ')
-//     } if (pageYOffset < 500) {
-//         scroll.classList.remove('activ')
-//     }
-// })
 
 
-function showMap () {
-    YMaps.load(function() {
-        let mapContainer = YMaps.jQuery("#YMapsID"),
-            map = new YMaps.Map(mapContainer[0]);
+$(function(){
 
-        mapContainer.css("display", "");
-        map.setCenter(new YMaps.GeoPoint(37.64, 55.76));
-    });
-}
+    $("#phone").mask("7(999) 999-9999");
+  });
+
+
+  $(document).ready(function() {
+
+	$('.header__bureger').click(function(event) {
+        $('.header__bureger,.header__content-info,.navigation').toggleClass('active');
+		
+		$('body').toggleClass('lock');
+	});
+    
+});
+    

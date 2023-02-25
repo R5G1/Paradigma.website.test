@@ -14,6 +14,9 @@
 <body>
     <header id="header">
         <div class="conteiner">
+            <div class="header__bureger">
+                <span class="header__bureger-span"></span>
+            </div>
             <div class="header__content-info">
                 <a class="header__content-info-logo" href="">
                     <img class="header__content-info-logo-img" src="/img/header/Логотип.svg" alt="">
@@ -71,7 +74,27 @@
                     </a>
                 </div>
             </div>
+            <section class="line">
+                <div class="conteiner">
+                    <div class="line__content"></div>
 
+                </div>
+
+            </section>
+            <nav class="navigation">
+                <div class="navigation__conteiner">
+                    <a class="navigation__text" href="#">Главная</a>
+                    <a class="navigation__text" href="#">услуги</a>
+                    <a class="navigation__text" href="#">модели двигателей</a>
+                    <a class="navigation__text" href="#">отзывы</a>
+                    <a class="navigation__text" href="#">стоимость</a>
+                    <a class="navigation__text" href="#">примеры работ </a>
+                    <a class="navigation__text" href="#">полезные статьи</a>
+                    <a class="navigation__text" href="#">о компании</a>
+                    <a class="navigation__text" href="#">Контакты</a>
+                </div>
+
+            </nav>
 
         </div>
 
@@ -79,30 +102,7 @@
 
 
     </header>
-    <section class="line">
-        <div class="conteiner">
-            <div class="line__content"></div>
 
-        </div>
-
-    </section>
-    <nav class="navigation">
-        <div class="conteiner">
-            <div class="navigation__conteiner">
-                <a class="navigation__text" href="#">Главная</a>
-                <a class="navigation__text" href="#">услуги</a>
-                <a class="navigation__text" href="#">модели двигателей</a>
-                <a class="navigation__text" href="#">отзывы</a>
-                <a class="navigation__text" href="#">стоимость</a>
-                <a class="navigation__text" href="#">примеры работ </a>
-                <a class="navigation__text" href="#">полезные статьи</a>
-                <a class="navigation__text" href="#">о компании</a>
-                <a class="navigation__text" href="#">Контакты</a>
-            </div>
-
-        </div>
-
-    </nav>
     <main>
         <section class="title">
             <div class="title__bg">
@@ -188,13 +188,14 @@
 
                 </p>
                 <form class="popup-mobail__content-form" action="#" method="get">
-                    <p class="popup-mobail__content-form-text" >Введите ваш номер телефона</p>
-                    <input class="popup-mobail__content-form-input"  type="tel" name="phone" >
-                    <button type="button" class="popup-mobail__content-form-btn">
+                    <p class="popup-mobail__content-form-text">Введите ваш номер телефона</p>
+                    <input class="popup-mobail__content-form-input" id="phone" type="text" name="phone" required
+                        placeholder="7(999) 999-9999">
+                    <button type="submit" class="popup-mobail__content-form-btn">
                         <p>Перезвоните мне</p>
                     </button>
                     <div class="popup-mobail__content-form-input-checkbox">
-                        <input type="checkbox" id="scales" name="scales" checked>
+                        <input type="checkbox" id="scales" name="scales" required>
                         <label for="scales">Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики
                                 конфиденциальности</a></label>
                     </div>
@@ -205,6 +206,7 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
