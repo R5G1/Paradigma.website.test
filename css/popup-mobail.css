@@ -1,0 +1,46 @@
+.popup-mobail {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-color-o9);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup-mobail__body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 3vw;
+  background: var(--main-color-o1);
+}
+.popup-mobail__content {
+  max-width: 90vw;
+  border-radius: 3vh;
+  margin: 0 auto;
+  min-height: 90 vh;
+  background: var(--main-color-d);
+  padding: 3vh 4vw;
+  position: relative;
+  color: var(--main-color-w);
+}
+.popup-mobail__content-close {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  color: var(--main-color-w);
+  font-size: 2vw;
+}
+.popup-mobail__content-title {
+  text-align: center;
+  font-size: 2.2vw;
+  margin: 2vh 0;
+}
+.popup-mobail__content-text {
+  text-align: center;
+  margin: 2vh 0;
+  font-size: var(--front-size17);
+}
